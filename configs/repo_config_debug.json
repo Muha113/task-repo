@@ -1,0 +1,6 @@
+{
+    "repo_name": "myname",
+    "conn_prefix": "mongodb://",
+    "conn_host": "localhost",
+    "conn_port": "27017"
+}
