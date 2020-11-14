@@ -3,6 +3,7 @@ module github.com/Muha113/task-repo
 go 1.14
 
 require (
+	github.com/fatih/structs v1.1.0 // indirect
 	github.com/golang/protobuf v1.4.1
 	github.com/sirupsen/logrus v1.7.0
 	go.mongodb.org/mongo-driver v1.4.3

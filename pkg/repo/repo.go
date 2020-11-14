@@ -14,6 +14,22 @@ const (
 	CollectionCompany  = "Company"
 )
 
+type ErrorStatus string
+
+const (
+	ErrorNotFound     ErrorStatus = "Not found"
+	ErrorInvalidID    ErrorStatus = "Invalid ID"
+	ErrorValidation   ErrorStatus = "Validation exception"
+	ErrorInvalidInput ErrorStatus = "Invalid input"
+)
+
+var StatusMapper = map[ErrorStatus]int{
+	ErrorNotFound:     404,
+	ErrorInvalidID:    400,
+	ErrorValidation:   405,
+	ErrorInvalidInput: 405,
+}
+
 type Repository struct {
 	mutex  *sync.RWMutex
 	config *RepositoryConfig
